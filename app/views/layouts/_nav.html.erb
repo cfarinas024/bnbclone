@@ -1,0 +1,7 @@
+<!-- render separate navbars for user and guest -->
+
+<% if !user_signed_in? %>
+  <%= render '/layouts/nav_guest' %>
+<% else %>
+  <%= render '/layouts/nav_user' %>
+<% end %>
